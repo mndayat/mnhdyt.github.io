@@ -17,7 +17,7 @@
     <!-- navbar -->
     <nav class="navbar fixed-top navbar-dark bg-secondary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">NOT SECRETO</a>
+        <a class="navbar-brand" href="#">PESAN RAHASIA</a>
       </div>
     </nav>
     <!-- akhir navbar -->
@@ -105,6 +105,8 @@
             btnKirim.classList.toggle('d-none');
              //tampilkan alert
              myAlert.classList.toggle('d-none');
+             //reset formnya
+             form.reset();
             console.log('Success!', response);
           })
           .catch(error => console.error('Error!', error.message))
